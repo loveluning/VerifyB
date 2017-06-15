@@ -21,16 +21,30 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/574784753@qq.com/VerifyB'
+  s.homepage         = 'https://github.com/loveluning/VerifyB'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '574784753@qq.com' => '2982432751@qq.com' }
-  s.source           = { :git => 'https://github.com/574784753@qq.com/VerifyB.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/loveluning/VerifyB.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'VerifyB/Classes/**/*'
+#s.source_files = 'VerifyB/Classes/**/*'
+
+s.subspec 'Model' do |vc|
+vc.source_files = 'VerifyB/Classes/Model/**/*'
+vc.dependency 'VerifyB/ViewModel'
+vc.dependency 'VerifyB/View'
+end
+
+s.subspec 'ViewModel' do |api|
+api.source_files = 'VerifyB/Classes/ViewModel/**/*'
+end
+
+s.subspec 'View' do |view|
+view.source_files = 'VerifyB/Classes/View/**/*'
+end
   
   # s.resource_bundles = {
   #   'VerifyB' => ['VerifyB/Assets/*.png']

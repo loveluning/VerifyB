@@ -1,0 +1,43 @@
+{
+  "name": "VerifyB",
+  "version": "0.1.0",
+  "summary": "A short description of VerifyB.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/loveluning/VerifyB",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "574784753@qq.com": "2982432751@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/loveluning/VerifyB.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "subspecs": [
+    {
+      "name": "Model",
+      "source_files": "VerifyB/Classes/Model/**/*",
+      "dependencies": {
+        "VerifyB/ViewModel": [
+
+        ],
+        "VerifyB/View": [
+
+        ]
+      }
+    },
+    {
+      "name": "ViewModel",
+      "source_files": "VerifyB/Classes/ViewModel/**/*"
+    },
+    {
+      "name": "View",
+      "source_files": "VerifyB/Classes/View/**/*"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+framework module VerifyB {
+  umbrella header "VerifyB-umbrella.h"
+
+  export *
+  module * { export * }
+}

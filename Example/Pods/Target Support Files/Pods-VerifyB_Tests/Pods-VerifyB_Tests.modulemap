@@ -1,0 +1,6 @@
+framework module Pods_VerifyB_Tests {
+  umbrella header "Pods-VerifyB_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
